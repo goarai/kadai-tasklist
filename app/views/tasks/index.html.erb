@@ -18,7 +18,7 @@
             <td><%= link_to task.id, task %></td>
             <td><%= task.content %></td>
             <td><%= task.status %></td>
-            <td><%= task.user_id %></td>
+            <td><%= task.user.name %></td>
           </tr>
         <% end %>
       </tbody>

@@ -13,6 +13,10 @@
     <th>ステータス</th>
     <td><%= @task.status %></td>
   </tr>
+  <tr>
+    <th>作成者</th>
+    <td><%= @task.user.name %></td>
+  </tr>
 </table>
 
 <%= link_to 'このタスクを編集する', edit_task_path(@task), class: 'btn btn-light' %>
